@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuLev3_1_forms-js_fonts-generatorment</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Fonts-Generator</h1>
+        <form action="" onsubmit="return false">
+            <input type="range" name="fontSize" id="fontSize" min="20" max="100" step="10" onchange="changeFontsSize()">
+            <select name="fonts" id="fonts" onchange="changeFontsSize()">
+                <option value="'Roboto', sans-serif" selected>Roboto</option>
+                <option value="'Open Sans', sans-serif">Open Sans</option>
+                <option value="'Rampart One', cursive">Rampart One</option>
+                <option value="'Permanent Marker', cursive">Permanent Marker</option>
+            </select>
+            <input type="text" name="text" id="text" onchange="changeFontsSize()">
+            <h2 id="output"></h2>
+        </form>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
